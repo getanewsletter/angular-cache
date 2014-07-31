@@ -7,7 +7,7 @@
  *
  * @overview angular-cache is a very useful replacement for Angular's $cacheFactory.
  */
-require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+require_cache=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require_cache=="function"&&require_cache;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require_cache=="function"&&require_cache;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require_cache,module,exports){
 /**
  * @method bubbleUp
  * @param {array} heap The heap.
@@ -187,7 +187,7 @@ module.exports = {
   DSBinaryHeap: DSBinaryHeap
 };
 
-},{}],2:[function(require,module,exports){
+},{}],2:[function(require_cache,module,exports){
 /**
  * @doc method
  * @id DSCache.methods:destroy
@@ -225,8 +225,8 @@ module.exports = function destroy() {
   this.$$prefix = null;
 };
 
-},{}],3:[function(require,module,exports){
-var utils = require('../utils');
+},{}],3:[function(require_cache,module,exports){
+var utils = require_cache('../utils');
 
 /**
  * @doc method
@@ -410,9 +410,9 @@ module.exports = function get(key, options) {
   return value;
 };
 
-},{"../utils":22}],4:[function(require,module,exports){
-var defaults = require('../defaults'),
-  DSBinaryHeap = require('../DSBinaryHeap').DSBinaryHeap;
+},{"../utils":22}],4:[function(require_cache,module,exports){
+var defaults = require_cache('../defaults'),
+  DSBinaryHeap = require_cache('../DSBinaryHeap').DSBinaryHeap;
 
 /*!
  * Configure the cache to use webStorage.
@@ -603,7 +603,7 @@ DSCache.prototype.setOptions = _setOptions;
  * @description
  * See [DSCache.setCapacity](/documentation/api/angular-cache/DSCache.methods:create).
  */
-DSCache.prototype.setCapacity = require('./setCapacity');
+DSCache.prototype.setCapacity = require_cache('./setCapacity');
 
 /**
  * @doc method
@@ -613,7 +613,7 @@ DSCache.prototype.setCapacity = require('./setCapacity');
  * @description
  * See [DSCache.setDeleteOnExpire](/documentation/api/angular-cache/DSCache.methods:create).
  */
-DSCache.prototype.setDeleteOnExpire = require('./setDeleteOnExpire');
+DSCache.prototype.setDeleteOnExpire = require_cache('./setDeleteOnExpire');
 
 /**
  * @doc method
@@ -623,7 +623,7 @@ DSCache.prototype.setDeleteOnExpire = require('./setDeleteOnExpire');
  * @description
  * See [DSCache.setMaxAge](/documentation/api/angular-cache/DSCache.methods:create).
  */
-DSCache.prototype.setMaxAge = require('./setMaxAge');
+DSCache.prototype.setMaxAge = require_cache('./setMaxAge');
 
 /**
  * @doc method
@@ -633,7 +633,7 @@ DSCache.prototype.setMaxAge = require('./setMaxAge');
  * @description
  * See [DSCache.setRecycleFreq](/documentation/api/angular-cache/DSCache.methods:create).
  */
-DSCache.prototype.setRecycleFreq = require('./setRecycleFreq');
+DSCache.prototype.setRecycleFreq = require_cache('./setRecycleFreq');
 
 /**
  * @doc method
@@ -643,7 +643,7 @@ DSCache.prototype.setRecycleFreq = require('./setRecycleFreq');
  * @description
  * See [DSCache.setCacheFlushInterval](/documentation/api/angular-cache/DSCache.methods:create).
  */
-DSCache.prototype.setCacheFlushInterval = require('./setCacheFlushInterval');
+DSCache.prototype.setCacheFlushInterval = require_cache('./setCacheFlushInterval');
 
 /**
  * @doc method
@@ -653,7 +653,7 @@ DSCache.prototype.setCacheFlushInterval = require('./setCacheFlushInterval');
  * @description
  * See [DSCache.setOnExpire](/documentation/api/angular-cache/DSCache.methods:create).
  */
-DSCache.prototype.setOnExpire = require('./setOnExpire');
+DSCache.prototype.setOnExpire = require_cache('./setOnExpire');
 
 /**
  * @doc method
@@ -663,7 +663,7 @@ DSCache.prototype.setOnExpire = require('./setOnExpire');
  * @description
  * See [DSCache.put](/documentation/api/angular-cache/DSCache.methods:create).
  */
-DSCache.prototype.put = require('./put');
+DSCache.prototype.put = require_cache('./put');
 
 /**
  * @doc method
@@ -673,7 +673,7 @@ DSCache.prototype.put = require('./put');
  * @description
  * See [DSCache.get](/documentation/api/angular-cache/DSCache.methods:create).
  */
-DSCache.prototype.get = require('./get');
+DSCache.prototype.get = require_cache('./get');
 
 /**
  * @doc method
@@ -683,7 +683,7 @@ DSCache.prototype.get = require('./get');
  * @description
  * See [DSCache.remove](/documentation/api/angular-cache/DSCache.methods:create).
  */
-DSCache.prototype.remove = require('./remove');
+DSCache.prototype.remove = require_cache('./remove');
 
 /**
  * @doc method
@@ -693,7 +693,7 @@ DSCache.prototype.remove = require('./remove');
  * @description
  * See [DSCache.removeAll](/documentation/api/angular-cache/DSCache.methods:create).
  */
-DSCache.prototype.removeAll = require('./removeAll');
+DSCache.prototype.removeAll = require_cache('./removeAll');
 
 /**
  * @doc method
@@ -703,7 +703,7 @@ DSCache.prototype.removeAll = require('./removeAll');
  * @description
  * See [DSCache.removeExpired](/documentation/api/angular-cache/DSCache.methods:create).
  */
-DSCache.prototype.removeExpired = require('./removeExpired');
+DSCache.prototype.removeExpired = require_cache('./removeExpired');
 
 /**
  * @doc method
@@ -713,7 +713,7 @@ DSCache.prototype.removeExpired = require('./removeExpired');
  * @description
  * See [DSCache.destroy](/documentation/api/angular-cache/DSCache.methods:create).
  */
-DSCache.prototype.destroy = require('./destroy');
+DSCache.prototype.destroy = require_cache('./destroy');
 
 /**
  * @doc method
@@ -723,7 +723,7 @@ DSCache.prototype.destroy = require('./destroy');
  * @description
  * See [DSCache.info](/documentation/api/angular-cache/DSCache.methods:create).
  */
-DSCache.prototype.info = require('./info');
+DSCache.prototype.info = require_cache('./info');
 
 /**
  * @doc method
@@ -733,7 +733,7 @@ DSCache.prototype.info = require('./info');
  * @description
  * See [DSCache.keySet](/documentation/api/angular-cache/DSCache.methods:create).
  */
-DSCache.prototype.keySet = require('./keySet');
+DSCache.prototype.keySet = require_cache('./keySet');
 
 /**
  * @doc method
@@ -743,7 +743,7 @@ DSCache.prototype.keySet = require('./keySet');
  * @description
  * See [DSCache.keys](/documentation/api/angular-cache/DSCache.methods:create).
  */
-DSCache.prototype.keys = require('./keys');
+DSCache.prototype.keys = require_cache('./keys');
 
 /**
  * @doc method
@@ -852,7 +852,7 @@ DSCache.prototype.touch = function (key) {
 
 module.exports = DSCache;
 
-},{"../DSBinaryHeap":1,"../defaults":"kH9dpy","./destroy":2,"./get":3,"./info":5,"./keySet":6,"./keys":7,"./put":8,"./remove":9,"./removeAll":10,"./removeExpired":11,"./setCacheFlushInterval":12,"./setCapacity":13,"./setDeleteOnExpire":14,"./setMaxAge":15,"./setOnExpire":16,"./setRecycleFreq":17}],5:[function(require,module,exports){
+},{"../DSBinaryHeap":1,"../defaults":"kH9dpy","./destroy":2,"./get":3,"./info":5,"./keySet":6,"./keys":7,"./put":8,"./remove":9,"./removeAll":10,"./removeExpired":11,"./setCacheFlushInterval":12,"./setCapacity":13,"./setDeleteOnExpire":14,"./setMaxAge":15,"./setOnExpire":16,"./setRecycleFreq":17}],5:[function(require_cache,module,exports){
 /**
  * @doc method
  * @id DSCache.methods:info
@@ -930,8 +930,8 @@ module.exports = function info(key) {
   }
 };
 
-},{}],6:[function(require,module,exports){
-var utils = require('../utils');
+},{}],6:[function(require_cache,module,exports){
+var utils = require_cache('../utils');
 
 /**
  * @doc method
@@ -975,8 +975,8 @@ module.exports = function keySet() {
   }
 };
 
-},{"../utils":22}],7:[function(require,module,exports){
-var utils = require('../utils');
+},{"../utils":22}],7:[function(require_cache,module,exports){
+var utils = require_cache('../utils');
 
 /**
  * @doc method
@@ -1016,8 +1016,8 @@ module.exports = function keys() {
   }
 };
 
-},{"../utils":22}],8:[function(require,module,exports){
-var utils = require('../utils');
+},{"../utils":22}],8:[function(require_cache,module,exports){
+var utils = require_cache('../utils');
 
 /**
  * @doc method
@@ -1136,7 +1136,7 @@ module.exports = function put(key, value) {
   return value;
 };
 
-},{"../utils":22}],9:[function(require,module,exports){
+},{"../utils":22}],9:[function(require_cache,module,exports){
 /**
  * @doc method
  * @id DSCache.methods:remove
@@ -1200,7 +1200,7 @@ module.exports = function remove(key) {
   }
 };
 
-},{}],10:[function(require,module,exports){
+},{}],10:[function(require_cache,module,exports){
 /**
  * @doc method
  * @id DSCache.methods:removeAll
@@ -1255,7 +1255,7 @@ module.exports = function removeAll() {
   }
 };
 
-},{}],11:[function(require,module,exports){
+},{}],11:[function(require_cache,module,exports){
 /**
  * @doc method
  * @id DSCache.methods:removeExpired
@@ -1332,7 +1332,7 @@ module.exports = function removeExpired() {
   return expired;
 };
 
-},{}],12:[function(require,module,exports){
+},{}],12:[function(require_cache,module,exports){
 /**
  * @doc method
  * @id DSCache.methods:setCacheFlushInterval
@@ -1385,7 +1385,7 @@ module.exports = function setCacheFlushInterval(cacheFlushInterval) {
   }
 };
 
-},{}],13:[function(require,module,exports){
+},{}],13:[function(require_cache,module,exports){
 /**
  * @doc method
  * @id DSCache.methods:setCapacity
@@ -1442,7 +1442,7 @@ module.exports = function setCapacity(capacity) {
   return removed;
 };
 
-},{}],14:[function(require,module,exports){
+},{}],14:[function(require_cache,module,exports){
 /**
  * @doc method
  * @id DSCache.methods:setDeleteOnExpire
@@ -1498,8 +1498,8 @@ module.exports = function setDeleteOnExpire(deleteOnExpire) {
   this.setRecycleFreq(this.$$recycleFreq);
 };
 
-},{}],15:[function(require,module,exports){
-var utils = require('../utils');
+},{}],15:[function(require_cache,module,exports){
+var utils = require_cache('../utils');
 
 /**
  * @doc method
@@ -1596,7 +1596,7 @@ module.exports = function setMaxAge(maxAge) {
   }
 };
 
-},{"../utils":22}],16:[function(require,module,exports){
+},{"../utils":22}],16:[function(require_cache,module,exports){
 /**
  * @doc method
  * @id DSCache.methods:setOnExpire
@@ -1643,7 +1643,7 @@ module.exports = function setOnExpire(onExpire) {
   }
 };
 
-},{}],17:[function(require,module,exports){
+},{}],17:[function(require_cache,module,exports){
 /**
  * @doc method
  * @id DSCache.methods:setRecycleFreq
@@ -1714,9 +1714,9 @@ module.exports = function setRecycleFreq(recycleFreq) {
   }
 };
 
-},{}],18:[function(require,module,exports){
-var defaults = require('../defaults'),
-  DSCache = require('../DSCache'),
+},{}],18:[function(require_cache,module,exports){
+var defaults = require_cache('../defaults'),
+  DSCache = require_cache('../DSCache'),
   version = '3.1.0';
 
 /**
@@ -2069,9 +2069,9 @@ function DSCacheFactoryProvider() {
 
 module.exports = DSCacheFactoryProvider;
 
-},{"../DSCache":4,"../defaults":"kH9dpy"}],"Defaults":[function(require,module,exports){
-module.exports=require('kH9dpy');
-},{}],"kH9dpy":[function(require,module,exports){
+},{"../DSCache":4,"../defaults":"kH9dpy"}],"Defaults":[function(require_cache,module,exports){
+module.exports=require_cache('kH9dpy');
+},{}],"kH9dpy":[function(require_cache,module,exports){
 var defaults = {
   /**
    * @doc overview
@@ -2306,7 +2306,7 @@ module.exports = {
   defaults: defaults
 };
 
-},{}],21:[function(require,module,exports){
+},{}],21:[function(require_cache,module,exports){
 (function (window, angular, undefined) {
   'use strict';
 
@@ -2358,7 +2358,7 @@ module.exports = {
 
 
   angular.module('angular-data.DSBinaryHeap', [])
-    .provider('DSBinaryHeap', require('./DSBinaryHeap').DSBinaryHeapProvider);
+    .provider('DSBinaryHeap', require_cache('./DSBinaryHeap').DSBinaryHeapProvider);
 
   /**
    * @doc overview
@@ -2382,7 +2382,7 @@ module.exports = {
    * ```
    *
    * Load `dist/angular-cache.js` or `dist/angular-cache.min.js` onto your web page after Angular.js. Angular-cache is
-   * also consumable by Browserify and you should be able to `require('angular-cache')`. The `main` file is `src/index.js`.
+   * also consumable by Browserify and you should be able to `require_cache('angular-cache')`. The `main` file is `src/index.js`.
    *
    * #### Manual download
    * Download angular-cache.3.1.0.js from the [Releases](https://github.com/jmdobry/angular-cache/releases)
@@ -2405,11 +2405,11 @@ module.exports = {
    * angular-data if you are using angular-data.
    */
   angular.module('angular-data.DSCacheFactory', ['ng', 'angular-data.DSBinaryHeap'])
-    .provider('DSCacheFactory', require('./DSCacheFactory'));
+    .provider('DSCacheFactory', require_cache('./DSCacheFactory'));
 
 })(window, window.angular);
 
-},{"./DSBinaryHeap":1,"./DSCacheFactory":18}],22:[function(require,module,exports){
+},{"./DSBinaryHeap":1,"./DSCacheFactory":18}],22:[function(require_cache,module,exports){
 module.exports = {
   /*!
    * Stringify a number.
